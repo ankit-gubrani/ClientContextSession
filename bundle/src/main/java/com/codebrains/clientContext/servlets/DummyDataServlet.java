@@ -12,8 +12,10 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-@SlingServlet(generateComponent = false, paths = "/bin/client/data")
-@Component(immediate = true, metatype = false, enabled = true)
+@SlingServlet(label = "Dummy Data Servlet",description = "This is a dummy servlet that returns Dummy data as JSON Response",
+        generateComponent = false, paths = {"/bin/client/data"}, methods = {"GET", "POST"})
+@Component(label = "Dummy Data Servlet", description = "This is a dummy servlet that returns Dummy data as JSON Response",
+        immediate = true, metatype = false, enabled = true)
 public class DummyDataServlet extends SlingAllMethodsServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DummyDataServlet.class);
