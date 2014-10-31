@@ -13,6 +13,11 @@ From the root directory, run ``mvn -PautoInstallPackage clean install`` to build
 
 From the bundle directory, run ``mvn -PautoInstallBundle clean install`` to build *just* the bundle and install to a CQ instance.
 
+* In case you are running your CQ instance on any other port number here is the command for building :
+
+mvn clean install -PautoInstallPackage -Dcrx.port=<Port-Number>
+
+
 Using with VLT
 --------------
 
