@@ -50,5 +50,7 @@ out/*
 build/*
 
 .idea*
+.idea/*
+*.iml
 
 mvn.log
