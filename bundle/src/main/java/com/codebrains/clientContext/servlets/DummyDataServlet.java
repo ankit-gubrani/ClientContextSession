@@ -14,6 +14,10 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.util.Date;
 
+/**
+ * Author : Ankit Gubrani
+ * Servlet registered on path /bin/client/data to provide dummy data to the custom client-context store component
+ */
 @SlingServlet(label = "Dummy Data Servlet",description = "This is a dummy servlet that returns Dummy data as JSON Response",
         generateComponent = false, paths = {"/bin/client/data"}, methods = {"GET", "POST"})
 @Component(label = "Dummy Data Servlet", description = "This is a dummy servlet that returns Dummy data as JSON Response",
@@ -44,7 +48,6 @@ public class DummyDataServlet extends SlingAllMethodsServlet {
             jsonObject.put("age", "24");
             jsonObject.put("city", "delhi");
             jsonObject.put("vertical", "cq5");
-
             //JSONWriter jsonWriter = new JSONWriter(response.getWriter());
 
             if(request.getParameter("callback") != null && !"".equalsIgnoreCase(request.getParameter("callback").toString())) {

@@ -1,4 +1,4 @@
-# ClientContextSession -
+# ClientContextSession -  AEM Users Group Kickoff meeting
 
 This project is a demo project for Client Context Session which took place on 10th Oct 2015 and was the kickoff meeting
 of AEM Users Group Hyderabad. Under content module there are certain custom client context components which can be added
