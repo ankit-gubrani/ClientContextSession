@@ -4,6 +4,8 @@ This project is a demo project for Client Context Session which took place on 10
 of AEM Users Group Hyderabad. Under content module there are certain custom client context components which can be added
 to client context and utilized.
 
+Here is the link to HTML Presentation : [Content Personalization with AEM](http://ankit-gubrani.github.io/ClientContextSession/#/)
+
 
 Building
 --------
