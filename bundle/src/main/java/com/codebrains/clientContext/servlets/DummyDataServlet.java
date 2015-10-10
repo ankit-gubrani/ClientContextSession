@@ -7,6 +7,7 @@ import org.apache.sling.api.SlingHttpServletResponse;
 import org.apache.sling.api.servlets.SlingAllMethodsServlet;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONWriter;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,6 +44,8 @@ public class DummyDataServlet extends SlingAllMethodsServlet {
             jsonObject.put("age", "24");
             jsonObject.put("city", "delhi");
             jsonObject.put("vertical", "cq5");
+
+            //JSONWriter jsonWriter = new JSONWriter(response.getWriter());
 
             if(request.getParameter("callback") != null && !"".equalsIgnoreCase(request.getParameter("callback").toString())) {
                 response.getWriter().print(request.getParameter("callback")+"(");

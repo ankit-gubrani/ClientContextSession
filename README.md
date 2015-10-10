@@ -1,8 +1,9 @@
-ClientContextSession
+# ClientContextSession -
 
-This is a demo repository for Client Context Session.
+This project is a demo project for Client Context Session which took place on 10th Oct 2015 and was the kickoff meeting
+of AEM Users Group Hyderabad. Under content module there are certain custom client context components which can be added
+to client context and utilized.
 
-This a content package project generated using the multimodule-content-package-archetype.
 
 Building
 --------
@@ -17,21 +18,24 @@ From the bundle directory, run ``mvn -PautoInstallBundle clean install`` to buil
 
 mvn clean install -PautoInstallPackage -Dcrx.port=<Port-Number>
 
-
-Using with VLT
---------------
-
-To use vlt with this project, first build and install the package to your local CQ instance as described above. Then cd to `content/src/main/content/jcr_root` and run
-
-    vlt --credentials admin:admin checkout -f ../META-INF/vault/filter.xml --force http://localhost:4502/crx
-
-Once the working copy is created, you can use the normal ``vlt up`` and ``vlt ci`` commands.
-
 Specifying CRX Host/Port
 ------------------------
 
 The CRX host and port can be specified on the command line with:
 mvn -Dcrx.host=otherhost -Dcrx.port=5502 <goals>
+
+# Author
+
+### **_Ankit gubrani_**
+
+Contact Info :
+
+* [LinkedIn](https://in.linkedin.com/pub/ankit-gubrani/74/a75/56b "Ankit Gubrani")
+* [Twitter](https://twitter.com/ankitgubrani90)
+* [Blog](http://codebrains.blogspot.in/)
+* [Slideshare](http://www.slideshare.net/ankitgubrani/)
+* [Site](http://www.codebrains.co.in/ankitgubrani)
+
 
 
 
